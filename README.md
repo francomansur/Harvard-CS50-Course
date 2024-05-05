@@ -31,10 +31,10 @@
   • Speller<br>
 ### ⏳ Week 6
   • Sentimental / Hello<br>
-  • Sentimental / Mario (Less) or Mario (More)
-  • Sentimental / Cash or Credit
-  • Sentimental / Readability
-  • DNA
+  • Sentimental / Mario (Less) or Mario (More)<br>
+  • Sentimental / Cash or Credit<br>
+  • Sentimental / Readability<br>
+  • DNA<br>
 ### ⏳ Week 7
   • Songs<br>
   • Movie<br>
