@@ -14,17 +14,17 @@
   • Me<br>
   • Mario (More)<br>
   • Credit<br>
-### ⏳ Week 2
+### ✅ Week 2
   • Scrabble<br>
   • Readability<br>
   • Caeser or Substitution<br>
-### ⏳ Week 3
+### ✅ Week 3
   • Sort<br>
   • Plurality<br>
   • Runoff or Tideman<br>
-### ⏳ Week 4
+### ✅ Week 4
   • Volume<br>
-  • Filter (Less) or Filter (More)<br>
+  • Filter (Less)<br>
   • Recover<br>
 ### ⏳ Week 5
   • Inheritance<br>
