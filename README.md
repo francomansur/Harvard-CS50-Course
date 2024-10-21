@@ -26,23 +26,23 @@
   • Volume<br>
   • Filter (Less)<br>
   • Recover<br>
-### ⏳ Week 5
+### ✅ Week 5
   • Inheritance<br>
   • Speller<br>
-### ⏳ Week 6
+### ✅ Week 6
   • Sentimental / Hello<br>
   • Sentimental / Mario (Less) or Mario (More)<br>
   • Sentimental / Cash or Credit<br>
   • Sentimental / Readability<br>
   • DNA<br>
-### ⏳ Week 7
+### ✅ Week 7
   • Songs<br>
   • Movie<br>
   • Fiftyville<br>
-### ⏳ Week 8
+### ✅ Week 8
   • Trivia<br>
-  • Gome Page<br>
-### ⏳ Week 9
+  • Home Page<br>
+### ✅ Week 9
   • Birthdays<br>
   • Finance<br>
 ### ⏳ Final Project
