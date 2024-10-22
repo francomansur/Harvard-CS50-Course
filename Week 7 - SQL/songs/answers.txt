@@ -1,0 +1,31 @@
+// Calculate AVG (energy, valence, danceability) and Aura
+
+SELECT AVG(energy) AS avg_energy, AVG(valence) AS avg_valence, AVG(danceability) AS avg_danceability
+FROM songs;
+
++------------+-------------+------------------+
+| avg_energy | avg_valence | avg_danceability |
++------------+-------------+------------------+
+| 0.65906    | 0.484443    | 0.71646          |
++------------+-------------+------------------+
+
+High = 0.0 - 0.33 / Medium = 0.45 - 0.66 / Low = 0.0 - 0.33
+
+Energy:
+High: The user prefers energetic songs. (0.0 - 0.33)
+Medium: The user enjoys a mix of energetic and calm songs. (0.34 - 0.66)
+Low: The user prefers calm songs. (0.67 - 1)
+
+Valence:
+High: The user likes happy and positive songs. (0.0 - 0.33)
+Medium: The user appreciates both joyful and more emotive songs. (0.34 - 0.66)
+Low: The user prefers sad or melancholic songs. (0.67 - 1)
+
+Danceability:
+High: The user likes danceable songs. (0.0 - 0.33)
+Medium: The user enjoys a mix of danceable and non-danceable songs. (0.34 - 0.66)
+Low: The user prefers less danceable songs. (0.67 - 1)
+
+// Better ways of calculating aura
+
+Considering a higher weight for songs that users listen to more frequently and providing an aura related to the time frame might be more accurate in reflecting their current preferences. This approach would require a "play count" column for each song to account for how often a user listens to each track. Additionally, it would be beneficial to generate an aura for each month and then determine a final aura based on the most common monthly aura throughout the year. This method accounts for changes in musical tastes over time and provides a more comprehensive representation of the listener's preferences.
