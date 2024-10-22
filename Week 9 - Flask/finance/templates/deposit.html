@@ -1,0 +1,36 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Deposit
+{% endblock %}
+
+{% block main %}
+    <h1>Deposit</h1><br>
+    <p>Wallet: {{ cash | usd}}</p>
+    <form action="/deposit" method="post">
+        <div class="mb-3">
+            <input autocomplete="off" autofocus class="form-control mx-auto w-auto" id="deposit" name="deposit" placeholder="$0.00" required>
+        </div>
+        <div class="button-container">
+            <button class="btn btn-primary" name="deposit_button" type="submit">Deposit</button>
+        </div>
+    </form><br>
+    {% if success %}
+        <div class="alert alert-success success-message">
+            Deposit successful! Your account has been credited with {{ deposit_value | usd}}.<br>Your new balance is {{ new_balance | usd}}.
+        </div>
+    {% endif %}
+
+
+    <script>
+        const input = document.getElementById('deposit');
+        input.addEventListener('input', function(e) {
+            let value = input.value.replace(/\D/g, '');
+            value = (value / 100).toLocaleString('en-US', {
+                style: 'currency',
+                currency: 'USD'
+            });
+            input.value = value;
+        });
+    </script>
+{% endblock %}

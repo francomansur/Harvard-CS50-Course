@@ -1,0 +1,29 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Quote
+{% endblock %}
+
+{% block main %}
+    <h1>Stocks</h1><br>
+    <form action="/quote" method="post">
+        <div class="mb-3">
+            <input autocomplete="off" autofocus class="form-control mx-auto w-auto" name="symbol" placeholder="Symbol (AAPL)(GOOG)..." type="text">
+            <input type="hidden" name="origin" value="/quote">
+        </div>
+        <button class="btn btn-primary" type="submit">Search</button>
+    </form><br>
+
+    {% if symbol_error %}
+        <p style="color: red;">{{ symbol_error }}</p>
+    {% endif %}
+
+    {% if stock %}
+        <div class="quote_info">
+            <h2>{{ stock["name"] }} ({{ stock["symbol"] }})</h2>
+            <p>Price: {{ stock["price"] | round(2) }}</p>
+            <p>Shares Owned: {{ user_shares_sum }}</p>
+        </div>
+    {% endif %}
+
+{% endblock %}
