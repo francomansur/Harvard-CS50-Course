@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+        <link href="styles.css" rel="stylesheet">
+        <title>Trivia!</title>
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+
+                let correct = document.querySelector('.correct');
+                correct.addEventListener('click', function() {
+                    correct.style.backgroundColor = 'green';
+                    document.querySelector('#feedback1').innerHTML = 'Correct!';
+                    disableQuestion1Buttons();
+                });
+
+                let incorrects = document.querySelectorAll('.incorrect');
+                incorrects.forEach(function(button) {
+                    button.addEventListener('click', function() {
+                        button.style.backgroundColor = 'red';
+                        document.querySelector('#feedback1').innerHTML = 'Incorrect';
+                        disableQuestion1Buttons();
+                    });
+                });
+
+                document.querySelector('#check').addEventListener('click', function() {
+                    let input = document.querySelector('input');
+                    if (input.value === 'Robin') {
+                        input.style.backgroundColor = 'green';
+                        document.querySelector('#feedback2').innerHTML = 'Correct!';
+                    } else {
+                        input.style.backgroundColor = 'red';
+                        document.querySelector('#feedback2').innerHTML = 'Incorrect';
+                    }
+                    document.querySelector('#check').disabled = true;
+                });
+
+                function disableQuestion1Buttons() {
+                    let question1Buttons = document.querySelectorAll('.section:first-child button');
+                    question1Buttons.forEach(function(button) {
+                        button.disabled = true;
+                    });
+                }
+            });
+        </script>
+    </head>
+
+    <body>
+        <div class="header">
+            <h1>Trivia!</h1>
+        </div>
+
+        <div class="container">
+            <div class="section">
+                <h2>Part 1: Multiple Choice </h2>
+                <hr>
+                <h3>Who stole the duck in Fiftyville problem set?</h3>
+                <button class="incorrect" id="q1option1">Charles</button>
+                <button class="incorrect" id="q1option2">Amanda</button>
+                <button class="incorrect" id="q1option3">Steven</button>
+                <button class="correct" id="q1option4">Bruce</button>
+                <button class="incorrect" id="q1option5">John Wick</button>
+                <p id="feedback1"></p>
+            </div>
+
+            <div class="section">
+                <h2>Part 2: Free Response</h2>
+                <hr>
+                <h3>Who is his accomplice?</h3>
+                <input type="text" name="answer" placeholder="Accomplice">
+                <button id="check">Check Answer</button>
+                <p id="feedback2"></p>
+            </div>
+        </div>
+    </body>
+
+</html>
