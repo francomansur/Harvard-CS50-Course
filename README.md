@@ -10,6 +10,7 @@ The code in this repository was developed and tested in the **CS50 Codespace** e
 ### Important:
 - When running the code locally, you may need to manually configure certain aspects, such as environment variables, dependencies, or specific paths.
 - Make sure all required dependencies are installed and that your local environment is properly configured.
+<br>
 
 <p align="center">
   <img src="https://i.imgur.com/6OFToYz.png" alt="CS50 Harvard Logo">
