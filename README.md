@@ -54,5 +54,5 @@ The code in this repository was developed and tested in the **CS50 Codespace** e
 ### ✅ Week 9
   • Birthdays<br>
   • Finance<br>
-### ⏳ Final Project
+### ✅ Final Project
   • Final Project
